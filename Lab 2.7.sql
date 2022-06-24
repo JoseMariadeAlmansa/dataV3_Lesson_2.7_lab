@@ -1,14 +1,3 @@
-
-/*
-1. How many films are there for each of the categories in the category table. Use appropriate join to write this query.
-2. Display the total amount rung up by each staff member in August of 2005.
-3. Which actor has appeared in the most films?
-4. Most active customer (the customer that has rented the most number of films)
-5. Display the first and last names, as well as the address, of each staff member.
-6. List each film and the number of actors who are listed for that film.
-7. Using the tables `payment` and `customer` and the JOIN command, list the total paid by each customer. List the customers alphabetically by last name.
-8. List number of films per `category`.
-*/
 -- --------1. How many films are there for each of the categories in the category table. Use appropriate join to write this query.---------------
 USE sakila;
 SELECT name AS 'category_name', COUNT(fc.film_id) as films_per_category
